@@ -1,0 +1,42 @@
+ /* Button Mixins Start */
+
+ @mixin box($padding, $border-radius, $btn_color, $btn-text-color, $fontweight, $font-size, $align) {
+     padding: $padding;
+     border-radius: $border-radius;
+     background: $btn_color;
+     color: $btn-text-color;
+     font-weight: $fontweight;
+     font-size: $font-size;
+     text-align: $align;
+     &:hover {
+         padding: $padding;
+         border-radius: $border-radius;
+         background: $btn_color;
+         color: $btn-text-color;
+         font-weight: $fontweight;
+         font-size: $font-size;
+         text-align: $align;
+     }
+ }
+
+ /* Button Mixins End */
+
+ /* Transition Mixins Start */
+
+ @mixin shift($property, $duration, $ease){
+	-webkit-transition: $property $duration $ease;
+	-moz-transition: $property $duration $ease;
+	-o-transition: $property $duration $ease;
+	transition: $property $duration $ease;
+}
+// @include shift(all, .3s, ease);
+ /* Transition Mixins Start */
+
+ .box {
+     @include box (10px 20px, 5px, #a90001, #fff, 700, 14px, center);
+     &:hover {
+         @include box ( 10px 20px, 5px, #6a0001, #fff, 700, 14px, center);
+     }
+ }
+
+

@@ -1,0 +1,58 @@
+#footer{
+    background: $header-main-background;
+    padding: 0px 15px;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+}
+.copyright-area{
+  float: left;
+  margin-top:15px;
+}
+.footer-menu{
+  float: right;
+  margin-top:15px;
+}
+.footer-menu ul li{
+    display: inline;
+    float: right;
+    margin-left: 15px;
+
+}
+.footer-menu ul{
+    width:100%;
+}
+
+
+.scrollTop{
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .scrollTop a i{
+      margin-left: 16px;
+      margin-top:10px;
+      color: $inner-fourth-color;
+  }
+  
+  .scrollTop a {
+    font-size: $font-size + 4px;
+    color: $main-color;
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 1px 1px 1px $inner-fourth-color;
+    border-radius: 50%;
+    position: fixed;
+    right: 5px;
+    bottom: 45px;
+    background-color: $all-background;
+  }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content-header{
+  padding-top: 60px;
+}

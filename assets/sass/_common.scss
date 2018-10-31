@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: $font-size;
+    background-color: $white !important;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin: 0px auto;
+    padding: 0px 40px;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+h1 {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0px;
+}
+
+h2 {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0px;
+}
+
+h3 {
+    font-size: $font-size+2px;
+    line-height: $line-height;
+    margin: 0px;
+    font-weight:  $font-weight;
+}
+
+h4 {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0px;
+}
+
+h5 {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0px;
+}
+
+h6 {
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0px;
+}
+
+p {
+    font-size: $font-size;
+    font-weight: $font-weight - 100;
+    color: $all-background;
+    line-height: $line-height;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none !important;
+    color: $all-background;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: $all-background;
+}
+
+a:focus {
+    outline: 0;
+    outline-offset: 0px;
+    text-decoration: none;
+    color: $main-color;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none !important;
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+
+.container {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

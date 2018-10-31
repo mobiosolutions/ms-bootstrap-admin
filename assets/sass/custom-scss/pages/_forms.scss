@@ -1,0 +1,127 @@
+
+        //-----------------Basic Form Start--------------------//
+
+        .form-design {
+            float:left;
+            width:100%;
+        }
+
+        .basic-form {
+            float: left;
+            width:100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-head {
+           
+            width:100%;
+        }
+        .form-head h2 {
+            font-size: $font-size + 2px;  
+        }
+        .btn.all-button {
+            color: #fff;
+            background: #2068b0;
+            margin-top: 20px;
+        }
+        .form-group label {
+            font-size: $font-size + 2px;
+        }
+
+        .form-group span{
+            font-size: $font-size + 2px;
+        }
+        .contact-form-checkbox {
+            width: 100%;
+            float: left;
+        }
+
+        .form-group.col-md-6 {
+            width: 100%;
+            float: left;
+            padding-left: 0;
+        }
+
+    //-----------------Complex Form End--------------------//
+        .complex-form{
+            float: left;
+            width:100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        input#exampleInputEmail {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;
+        }
+        input#exampleInputPassword {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;   
+        }
+        input#inputAddress {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit; 
+        }
+        input#inputAddress2 {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;
+        }
+        input#inputCity {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;
+        }
+        select#inputState  {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;
+        }
+        input#inputZip {
+            border: none;
+            border-bottom: 2px solid #c5c5c5;
+            border-radius: inherit;
+        }
+
+    //-----------------Complex Form End--------------------//
+
+    //-----------------Horizontal Form Start--------------------//
+        .horizontal-form {
+            float: left;
+            width:100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            width:100%;
+        }
+    //-----------------Horizontal Form End--------------------//
+
+
+
+    //-----------------Horizontal Form End--------------------// 
+
+        

@@ -1,0 +1,402 @@
+.main-header {
+    background-color: $red;
+    height: 70px;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-menu-top {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.logo-area {
+    float: left;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+
+.toggle-area {
+    float: right;
+}
+
+.toggle-area a i {
+    font-size: $font-size + 10px;
+    color: $header-main-background;
+}
+
+.header-top {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: auto;
+}
+
+.left-side-logo-header {
+    background: $header-left-side;
+    width: 255px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 30px;
+}
+
+.right-side-menu-bar {
+    box-shadow: 0 1px 15px 1px rgba(69, 65, 78, .1);
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    height: 70px;
+    background: $blue;
+}
+
+.header-menu {
+    float: left;
+    display: table;
+    height: 100%;
+    margin: 0 0 0 10px;
+}
+
+.notification-list {
+    float: right;
+    display: table;
+    height: 100%;
+    margin: 0 0 0 10px;
+}
+
+.header-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-row;
+    height: 100%;
+}
+
+.header-menu-list li {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+    @media only screen and (min-width:320px) and (max-width:480px){
+        padding: 0 10px;
+    }
+}
+
+.main-section {
+    padding-top: 70px;
+    //background-color: #f2f3f8;
+}
+
+.main-sidebar {
+    background-color: $header-left-side;
+    width: 255px;
+    flex: 0 0 auto;
+    display: flex;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 22px;
+}
+
+.left-side ul li {
+    margin-top: 5px;
+}
+.left-side ul  .active {
+    background-color:$blue; 
+    color: $white;
+    a{
+        color: $white;
+    }
+}
+
+.left-side ul li a {
+    color: $main-color;
+    display: block;
+    padding: 12px;
+    @media only screen and (max-width: 767px) {
+        padding: 12px 35px;
+    }
+}
+
+.left-side ul li a:hover {
+    color: $white;
+    background-color: $blue;
+    display: block;
+    padding: 12px;
+    // @include shift(all, .6s, ease);
+}
+
+.left-side-main {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.toggle-area a {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block !important;
+    cursor: pointer;
+    background: 0 0;
+    outline: 0 !important;
+    @include shift(all, .6s, ease);
+}
+
+.toggle-area a span {
+    background: $gray-400;
+    display: block;
+    position: absolute;
+    top: 13px;
+    height: 1px;
+    min-height: 1px;
+    width: 100%;
+    @include shift(all, .6s, ease);
+}
+
+.toggle-area a:hover span:before {
+    width: 100%;
+}
+
+.toggle-area a:hover span:after {
+    width: 100%;
+}
+
+.toggle-area a span::before {
+    background:  $gray-400;
+    left: auto;
+    right: 0;
+    top: -7px;
+    width: 50%;
+    @include shift(all, .6s, ease);
+    position: absolute;
+    display: block;
+    height: 1px;
+    min-height: 1px;
+    content: "";
+}
+
+.toggle-area a span::after {
+    background: $gray-400;
+    left: auto;
+    right: 0;
+    top: 7px;
+    width: 50%;
+    @include shift(all, .6s, ease);
+    position: absolute;
+    display: block;
+    height: 1px;
+    min-height: 1px;
+    content: "";
+}
+
+.main-sidebar {
+    width: 255px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar {
+    width: 70px !important;
+}
+
+.sidebar-mini.sidebar-collapse .content-wrapper,
+.sidebar-mini.sidebar-collapse .right-side,
+.sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: 70px !important;
+    z-index: 840;
+}
+
+.left-side {
+    width: 100%;
+    background: $inner-bg-second;
+}
+
+.left-side > ul {
+    margin-top: 70px;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .left-side ul li a span {
+    display: none;
+}
+
+.sidebar-mini.sidebar-collapse .main-sidebar .left-side ul li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.header-menu-list li a i {
+    font-size: $font-size + 6px;
+}
+
+.header-menu-list li a i::before {
+    background: $all-background;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-header .navbar {
+    margin-left: 250px;
+    @media only screen and(min-width:320px) and (max-width:767px){
+        margin-left: 0px;
+    }
+}
+
+.header-menu-list li a {
+    font-size: $font-size + 4px;
+}
+
+.left-side ul li a span {
+    margin-left: 10px;
+}
+
+.dropdown-aero-top {
+    color: $header-main-background;
+    line-height: 0;
+    display: inline-block;
+    left: 50%;
+    margin-left: 26px;
+    top: 1px;
+    position: absolute;
+}
+
+.dropdown-aero-top:before {
+    font-family: FontAwesome;
+    top: 0;
+    font-size: $font-size + 26px;
+    left: -5px;
+    padding-right: 10px;
+    content: "\f0de";
+}
+
+.dropdown-menu {
+    margin-top: 15px;
+    left: -160px;
+    border: none;
+    padding: 0px;
+    width: 300px;
+    position: absolute;
+    box-shadow: 1px 2px 3px 1px #c5c5c5;
+}
+
+.dropdown-item {
+    padding: 0px;
+}
+.main-sidebar{
+    @media only screen and (min-width:320px) and (max-width:767px){
+               left: -25px;
+       }
+}
+
+.content-header{
+    @media only screen and (min-width:320px) and (max-width:767px){
+        padding: 30px 0 0 0;
+    }
+}
+
+.left-side-bar::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    width: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: $inner-bg-second;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+.sidebar-menu:hover {
+    overflow: inherit !important;
+}
+.sidebar-menu, .main-sidebar .user-panel, .sidebar-menu > li.header{
+    overflow: inherit !important;
+}
+.sidebar-menu, .main-sidebar .user-panel, .sidebar-menu > li.header{
+    white-space: inherit;
+    overflow: inherit !important;
+}
+.treeview-menu{
+    background: $white;
+}
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right), 
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu > li:hover > .treeview-menu{
+    left: 70px;
+    text-align: left;
+}
+.sidebar-mini:not(.sidebar-mini-expand-feature).sidebar-collapse .sidebar-menu>li:hover>.treeview-menu{
+    padding: 0px;
+}
+.sidebar-mini.sidebar-collapse .main-header .navbar{
+    margin-left: 70px;
+}
+
+.dropdown-header{
+    background:$white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    border-top-right-radius: 10px;
+}
+.dropdown-header span{
+    width:100%;
+    color: $header-main-background;
+    text-align: center;
+}
+.dropdown-header .main-title{
+    font-size: $font-size + 8px;
+    font-weight: 600;
+} 
+.dropdown-header .sub-title{
+    font-size: $font-size + 2px;
+    font-weight: 400;
+} 
+.dropdown-body{
+    background: $header-main-background;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    height: 140px;
+}
+.list-item{
+    width:100%;
+    display: flow-root;
+    margin-top: 5px;
+}
+.time-line-text{
+    font-size: $font-size ;
+    color: $main-color;
+    float: left;
+}
+.time-line-time{
+    float: right;
+    font-size: $font-size ;
+    color: $main-color;
+}
+
+.content-header {
+    position: relative;
+    padding: 15px 0px 0 0px;
+}
+ .content-wrapper,.main-footer{
+    margin-left: 255px;
+     @media only screen and (min-width:320px) and (max-width:767px){
+        margin-left: 0px;
+     }
+   
+}
+
