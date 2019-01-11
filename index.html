@@ -2,196 +2,27 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tag Description -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="format-detection" content="telephone=no">
-    <!-- Meta Tag Description -->
-
-    <!-- Page Title Text -->
-    <title>Home</title>
-    <!-- Page Title Text -->
-
-    <!--Fevicon Icon Start-->
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-    <!--Fevicon Icon End-->
-
-    <!--Font Description-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <!--Font Description-->
-
-    <!-- Css Part Start -->
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/font/material-icon/materialdesignicons.css">
-    <link rel="stylesheet" href="assets/css/font/font-awesome/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/plugin/submain.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <!-- Css Part End -->
-
-    <!--[if lt IE 9]>
-        <script type="text/javascript" src="assets/js/html5shiv.min.js"></script>
-        <script type="text/javascript" src="assets/js/respond.min.js"></script>
-   <![endif]-->
+    <?php
+         $title = "Home";
+         include("./inc/common-head.html");
+    ?>
 
 </head>
 
 <body class="skin-blue sidebar-mini">
-    <!-- <Start Of Header Section> -->
     <div class="main-page">
-        <header class="main-header">
-            <div class="header-menu-top">
-                <div class="header-top" id="headertop">
-                    <div class="left-side-logo-header main-sidebar">
-                        <div class="logo-area">
-                            <img src="assets/images/mobio-logo.jpg" alt="Logo" />
-                        </div>
-                        <div class="toggle-area">
-                            <a href="#" data-toggle="push-menu" role="button">
-                                <span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <nav class="navbar navbar-static-top p-0">
-                        <div class="right-side-menu-bar">
-                            <div class="header-menu">
-                                <ul class="header-menu-list">
-                                    <li>
-                                        <a href="#">Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <div class="toggle-area d-sm-block d-md-none">
-                                            <a href="#" data-toggle="push-menu" role="button">
-                                                <span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="notification-list">
-                                <ul class="header-menu-list">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                        </a>
-                                        <!-- <div class="dropdown-menu">
-                                            <span class="dropdown-aero-top"></span>
-                                            <a class="dropdown-item" href="#"></a>
-                                            <div class="dropdown-inner">
-                                                <div class="dropdown-header">
-                                                    <span class="main-title">9 New Message</span>
-                                                    <br/>
-                                                    <span class="sub-title">User Notifications</span>
-                                                </div>
-                                                <div class="dropdown-body">
-                                                    <div>
-                                                        <span class="main-title">Message Log</span>
-                                                    </div>
-                                                    <div class="list-item">
-                                                        <span class="time-line-text">12 new users registered</span>
-                                                        <span class="time-line-time">Just Now</span>
-                                                    </div>
-                                                    <div class="list-item">
-                                                        <span class="time-line-text">12 new users registered</span>
-                                                        <span class="time-line-time">Just Now</span>
-                                                    </div>
-                                                    <div class="list-item">
-                                                        <span class="time-line-text">12 new users registered</span>
-                                                        <span class="time-line-time">Just Now</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div> -->
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-bell" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-user-circle" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-
-                </div>
-            </div>
-        </header>
-
-        <!-- <End Of Header Section> -->
-
-        <!-- <Start Of Body Section> -->
-
-        <!-- <Left Section Start> -->
-        <section class="left-side-bar main-sidebar">
-            <div class="left-side">
-                <ul class="sidebar-menu" data-widget="tree">
-
-                    <li class="active">
-                        <a href="index.html">
-                            <i class="fa fa-dashboard" aria-hidden="true"></i>
-
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="table.html">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
-
-                            <span>Tables</span>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a href="#">
-                            <i class="fa fa-tasks" aria-hidden="true"></i>
-                            <span>Pages</span>
-                        </a>
-                        <ul class="dropdown-menu-in">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-file" aria-hidden="true"></i>
-                            <span>Pages</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-right pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li class="Pg">
-                                <a href="login.html">
-                                    <i class="fa fa-user"></i> Login</a>
-                            </li>
-                            <li>
-                                <a href="sign-up.html">
-                                    <i class="fa fa-user"></i> Sign up</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-        </section>
-        <!-- <Left Section End> -->
+        <?php
+            $headtitle = "Dashboard";
+            include("./inc/common-header.html");
+            ?>
         <!-- Right Section Start -->
         <div class="right-area content-wrapper">
             <div class="content-header">
                 <div class="container">
                     <div class="counters">
                         <div class="row">
-                            <div class="col-md-3">
-                                <div class="counter-card">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter-card shadow">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="d-flex align-count">
@@ -213,8 +44,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="counter-card color-count-1">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter-card color-count-1 shadow">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="d-flex align-count">
@@ -236,8 +67,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="counter-card color-count-2">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter-card color-count-2 shadow">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="d-flex align-count">
@@ -259,8 +90,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="counter-card color-count-3">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter-card color-count-3 shadow">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="d-flex align-count">
@@ -284,11 +115,10 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Basic card -->
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="basic-card ">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="basic-card shadow">
                                 <div class="main-title-head">
                                     <div class="card-head">
                                         <div class="head-title">
@@ -334,8 +164,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="basic-card ">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="basic-card shadow">
                                 <div class="main-title-head">
                                     <div class="card-head">
                                         <div class="head-title">
@@ -357,14 +187,135 @@
                         </div>
 
                     </div>
-
                     <!-- Basic card end-->
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card user-card-full basic-card shadow">
+                                <div class="row m-l-0 m-r-0">
+                                    <div class="col-sm-4 bg-c-lite-green user-profile">
+                                        <div class="card-block text-center text-white">
+                                            <div class="mb25">
+                                                <img src="assets/images/pro-img.jpg" class="img-radius" alt="User-Profile-Image">
+                                            </div>
+                                            <h6 class="f-w-600">Jeny William</h6>
+                                            <p>Web Designer</p>
+                                            <i class="feather icon-edit m-t-10 f-16"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="card-block-in">
+                                            <h6 class="mb20 p-b-5 b-b-default f-w-600">Information</h6>
+                                            <div class="row">
+                                                <div class="col-sm-6 pl-0">
+                                                    <p class="m-b-10 f-w-600">Email</p>
+                                                    <h6 class="text-muted f-w-400">jeny@gmail.com</h6>
+                                                </div>
+                                                <div class="col-sm-6 pd-all-0">
+                                                    <p class="m-b-10 f-w-600">Phone</p>
+                                                    <h6 class="text-muted f-w-400">0023-333-526136</h6>
+                                                </div>
+                                            </div>
+                                            <h6 class="mb20 mt40 p-b-5 b-b-default f-w-600">Projects</h6>
+                                            <div class="row">
+                                                <div class="col-sm-6 pl-0">
+                                                    <p class="m-b-10 f-w-600">Recent</p>
+                                                    <h6 class="text-muted f-w-400">Guruable Admin</h6>
+                                                </div>
+                                                <div class="col-sm-6 pd-all-0">
+                                                    <p class="m-b-10 f-w-600">Most Viewed</p>
+                                                    <h6 class="text-muted f-w-400">Able Pro Admin</h6>
+                                                </div>
+                                            </div>
+                                            <ul class="social-link list-unstyled mt40 m-b-10">
+                                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title=""
+                                                        data-original-title="facebook"><i class="fa fa-facebook"
+                                                            aria-hidden="true"></i></a></li>
+                                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title=""
+                                                        data-original-title="linkedin"><i class="fa fa-linkedin"
+                                                            aria-hidden="true"></i></a></li>
+                                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title=""
+                                                        data-original-title="twitter"><i class="fa fa-twitter"
+                                                            aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-0 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mt15 card text-white bg-c-green shadow">
+                                        <div class="card-block">
+                                            <h6 class="m-b-0">New Costomers </h6>
+                                            <h4 class="m-t-10 m-b-10"><i class="mr15 fa fa-arrow-up" aria-hidden="true"></i>23</h4>
+                                            <p class="m-b-0">48% From Last 24 Hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mt15 card text-white bg-c-pink shadow">
+                                        <div class="card-block">
+                                            <h6 class="m-b-0">Total visits </h6>
+                                            <h4 class="m-t-10 m-b-10"><i class="mr15 fa fa-arrow-up" aria-hidden="true"></i>169</h4>
+                                            <p class="m-b-0">48% From Last 24 Hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-white bg-c-lite-green shadow mb-0">
+                                        <div class="card-block">
+                                            <h6 class="m-b-0">New Invoices </h6>
+                                            <h4 class="m-t-10 m-b-10"><i class="mr15 fa fa-arrow-up" aria-hidden="true"></i>456</h4>
+                                            <p class="m-b-0">48% From Last 24 Hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card text-white bg-c-yellow shadow mb-0">
+                                        <div class="card-block">
+                                            <h6 class="m-b-0">Orders </h6>
+                                            <h4 class="m-t-10 m-b-10"><i class="mr15 fa fa-arrow-up" aria-hidden="true"></i>564</h4>
+                                            <p class="m-b-0">48% From Last 24 Hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="basic-card">
+                            <div class="basic-card shadow">
+                                <div class="main-title-head">
+                                    <div class="card-head">
+                                        <div class="head-title">
+                                            <h3 class="head-text">
+                                                Area chart
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card_content">
+                                    <div class="container">
+                                        <div class="col-xs-6 col-xs-offset-3">
+                                            <div id="chart1" class="big-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="basic-card shadow">
                                 <div class="main-title-head">
                                     <div class="card-head">
                                         <div class="head-title">
@@ -373,7 +324,6 @@
                                             </h3>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="card_content">
                                     <div class="table-responsive ">
@@ -862,62 +812,107 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    
-
-
-
-
                 </div>
-                <footer id="footer">
-                    <div class="copyright-area">
-                        <p>
-                            2017 © Admin theme by Mobio Solutions
-                        </p>
-                    </div>
-                    <div class="footer-menu">
-                        <ul>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms And Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </footer>
-                <div id="stop" class="scrollTop">
-                    <a href=""><i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                    </a>
-                </div>
+                <?php
+  $beforCustomJS = '';
+include("inc/common-footer.html");
+?>
             </div>
         </div>
-
-
         <!-- Right Section End -->
     </div>
-
-
     <!-- <End Of Body Section> -->
+    <!-- <script src="assets/js/flot.js"></script> -->
+    <script>
 
-    <!-- Javascript Start Here -->
-    <script src="assets/js/plugin/jquery/jquery.min.js"></script>
-    <script src="assets/js/plugin/popper.min.js"></script>
-    <script src="assets/js/plugin/bootstrap.min.js"></script>
-    <script src="assets/js/plugin/default.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js', function () {
+            $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.pie.min.js', function () {
+                $.getScript('//cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.resize.min.js', function () {
 
 
+                    // static charts
+                    var d1 = [];
+                    for (var i = 0; i < 14; i += 0.2) {
+                        d1.push([i, Math.sin(i)]);
+                    }
+                    var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+                    var d3 = [[0, 12], [7, 12], [12, 13]];
 
-    <script src="assets/js/app.js"></script>
+                    // line
+                    $.plot("#chart1", [d2, d3], { yaxis: { show: false }, grid: { borderColor: '#ccc' }, series: { color: '#ff4444', lines: { show: true }, points: { show: true } } });
+                    $.plot("#chart2", [d1], { yaxis: { show: false }, grid: { borderColor: '#ccc' } });
+                    $.plot("#chart3", [d2, d3], { yaxis: { show: false }, grid: { borderColor: '#ccc' }, series: { color: '#ff4444', lines: { show: true }, points: { show: true } } });
+                    $.plot("#chart4", [d3], { yaxis: { show: false }, grid: { borderColor: '#ccc' }, series: { color: '#4444ff' } });
+
+                    // pie
+                    $.plot("#chart5", [{ data: 70, color: '#5566ff' }, { data: 20, color: '#ddd' }], { series: { pie: { show: true, innerRadius: 0.6 } } });
+                    $.plot("#chart6", [{ data: 10, color: '#5566ff' }, { data: 30, color: '#ddd' }], { series: { pie: { show: true, innerRadius: 0.6 } } });
+
+                    // real-time chart
+                    // we use an inline data source in the example, usually data would
+                    // be fetched from a server
+                    var data = [], totalPoints = 200;
+                    function getRandomData() {
+
+                        if (data.length > 0)
+                            data = data.slice(1);
+
+                        // do a random walk
+                        while (data.length < totalPoints) {
+                            var prev = data.length > 0 ? data[data.length - 1] : 50;
+                            var y = prev + Math.random() * 10 - 5;
+                            if (y < 0)
+                                y = 0;
+                            if (y > 100)
+                                y = 100;
+                            data.push(y);
+                        }
+
+                        // zip the generated y values with the x values
+                        var res = [];
+                        for (var i = 0; i < data.length; ++i)
+                            res.push([i, data[i]])
+                        return res;
+                    }
+
+                    // setup control widget
+                    var updateInterval = 500;
+                    $("#updateInterval").val(updateInterval).change(function () {
+                        var v = $(this).val();
+                        if (v && !isNaN(+v)) {
+                            updateInterval = +v;
+                            if (updateInterval < 1)
+                                updateInterval = 1;
+                            if (updateInterval > 2000)
+                                updateInterval = 2000;
+                            $(this).val("" + updateInterval);
+                        }
+                    });
+
+                    // setup plots
+                    var options = {
+                        grid: { borderColor: '#ccc' },
+                        series: { shadowSize: 0, color: "#33ff33" },
+                        yaxis: { min: 0, max: 100 },
+                        xaxis: { show: true }
+                    };
+
+                    var plot = $.plot($("#chart1"), [getRandomData()], options);
+
+                    function update() {
+                        plot.setData([getRandomData()]);
+                        plot.draw();
+                        setTimeout(update, updateInterval);
+                    }
+
+                    update();
+
+                });// end getScript (resize)
+            });// end getScript (pie)
+        });// end getScript
+
+    </script>
+
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -964,9 +959,6 @@
     </script>
 
     <!-- Javascript End Here -->
-
-
-
 </body>
 
 </html>

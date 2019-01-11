@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <link href="assets/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <?php
+        $title = "Form Datepicker";
+        include("./inc/common-head.html");
+   ?>
+ 
+</head>
+
+<body class="skin-blue sidebar-mini">
+    <!-- <Start Of Header Section> -->
+    <div class="main-page">
+        <?php
+            $headtitle = "Form Datepicker";
+            include("./inc/common-header.html");
+            ?>
+        <!-- Right Section Start -->
+        <div class="right-area content-wrapper">
+            <div class="content-header">
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div class="card shadow">
+										<div class="card-header">
+											<h2 class="mb-0">Normal Date picker without selected</h2>
+										</div>
+										<div class="card-body">
+											<p class="mg-b-20 mg-sm-b-40">The datepicker is tied to a standard form input field. Click on the input to open an interactive calendar in a small overlay. If a date is chosen, feedback is shown as the input's value.</p>
+											<div class="wd-200 mg-b-30">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+														</div>
+													</div><input class="form-control datepicker" placeholder="MM/DD/YYYY" type="text">
+												</div>
+											</div>
+										</div>
+									</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+                <script type="text/javascript" src="assets/js/bootstrap-datepicker.min.js"></script>
+                <?php
+            $beforCustomJS = '';
+          include("inc/common-footer.html");
+          ?>
+            </div>
+        </div>
+
+
+        <!-- Right Section End -->
+    </div>
+
+
+    <!-- <End Of Body Section> -->
+
+    
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $(".side-nav .collapse").on("hide.bs.collapse", function () {
+                $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+            });
+            $('.side-nav .collapse').on("show.bs.collapse", function () {
+                $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            /******************************
+                BOTTOM SCROLL TOP BUTTON
+             ******************************/
+
+            // declare variable
+            var scrollTop = $(".scrollTop");
+
+            $(window).scroll(function () {
+                // declare variable
+                var topPos = $(this).scrollTop();
+
+                // if user scrolls down - show scroll to top button
+                if (topPos > 100) {
+                    $(scrollTop).css("opacity", "1");
+
+                } else {
+                    $(scrollTop).css("opacity", "0");
+                }
+
+            }); // scroll END
+
+            //Click event to scroll to top
+            $(scrollTop).click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+
+            }); // click() scroll top EMD
+        });
+    </script>
+
+    <!-- Javascript End Here -->
+
+
+
+</body>
+
+</html>

@@ -81,6 +81,12 @@ table-layout: fixed;
 .counter-card{
     background: $header-main-background;
     padding: 15px;
+    @media screen and (max-width: 767px) and (min-width: 320px) { 
+        margin-bottom: 15px;
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) { 
+        margin-bottom: 15px;
+    }
 }
 .align-count{
     align-items: center !important;
@@ -197,3 +203,108 @@ table-layout: fixed;
   .card_content .card-footer .legend {
     display: inline-block;
 }
+
+.big-chart {
+    width:100%;
+    height:220px;
+  }
+  .line-chart {
+    width:100%;
+    height:100px;
+  }
+  .donut {width:100%;height:150px;min-width:150px;}
+  
+  .donut-label {
+    position:absolute;
+    left:45%;
+    font-size:22pt;
+    color:#ddd;
+    width:100%;
+    top:38%;
+  }
+  
+  .flot-tick-label.tickLabel {
+      font-size: 14px;
+  }
+
+  .new-card {
+      min-height: auto !important;
+  }
+  .card-block {
+    padding: 48px 10px;
+    text-align: center;
+}
+
+.bg-c-green {
+    background: -webkit-gradient(linear, left top, right top, from(#0ac282), to(#0df3a3));
+    background: linear-gradient(to right, #0ac282, #0df3a3);
+}
+
+.bg-c-pink {
+    background: -webkit-gradient(linear, left top, right top, from(#fe5d70), to(#fe909d));
+    background: linear-gradient(to right, #fe5d70, #fe909d);
+}
+
+.bg-c-lite-green {
+    background: -webkit-gradient(linear, left top, right top, from(#01a9ac), to(#01dbdf));
+    background: linear-gradient(to right, #01a9ac, #01dbdf);
+}
+.bg-c-yellow {
+    background: -webkit-gradient(linear, left top, right top, from(#fe9365), to(#feb798));
+    background: linear-gradient(to right, #fe9365, #feb798);
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    border: none;
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        margin-bottom: 15px !important;
+    }
+}
+
+.card-block-in {
+    padding: 30px 0px;
+    text-align: left;
+    float: left;
+    width: 100%;
+
+    p{
+        color: #000;
+    }
+}
+
+.b-b-default {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.user-card-full .social-link li a i {
+    color: #000;
+}
+
+
+.user-card-full .social-link li a i.fa-facebook:hover {
+    color: #4867aa;
+}
+
+.user-card-full .social-link li a i.fa-twitter:hover {
+    color: #1dcaff;
+}
+
+
+.user-card-full .social-link li a i.fa-linkedin:hover {
+    color: #007bb6;
+}
+
+ul.social-link li {
+    float: left;
+}
+
+
+.user-card-full .social-link li a {
+    margin: 0 10px 0 0;
+}
+

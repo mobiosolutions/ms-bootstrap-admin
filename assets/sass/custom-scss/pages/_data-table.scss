@@ -46,7 +46,21 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 div.dataTables_wrapper div.dataTables_filter {
-    text-align: right
+    text-align: right;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        text-align: left;
+    }
+}
+.table-responsive input.form-control.form-control-sm {
+    height: 30px;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        margin-top: 15px;
+    }
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        padding-left: 0px;
+    }
 }
 
 div.dataTables_wrapper div.dataTables_filter label {

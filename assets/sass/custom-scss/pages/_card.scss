@@ -2,7 +2,7 @@
     background: #fff;
      margin-top: 15px;
     margin-bottom: 15px;
-
+    min-height: 355px;
 }
 .main-title-head{
     display: -webkit-box;
@@ -119,6 +119,9 @@ table-layout: fixed;
 .counter-card{
     background: $all-background;
     padding: 15px;
+    @media only screen and (min-width:1024px) and (max-width:1240px){
+        min-height: 134px;
+    }
 }
 .align-count{
     align-items: center !important;
@@ -162,3 +165,20 @@ table-layout: fixed;
     background: #fb9678 !important;
 }
 
+.basic-card-table {
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table.table-dark>thead>tr>th {
+    border-color: #32383e !important;
+}
+
+table.table-dark>tbody>tr>td {
+    border-color: #32383e !important;
+}
+
+table.table-dark>tbody>tr>th {
+    border-color: #32383e !important;
+}
