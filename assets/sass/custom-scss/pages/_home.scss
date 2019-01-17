@@ -255,9 +255,9 @@ table-layout: fixed;
 }
 
 .card {
-    border-radius: 5px;
     -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
-    box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    box-shadow: 0 8px 20px 0 rgba(40, 37, 89, 0.1) !important;
+    border-radius: 2px;
     border: none;
     margin-bottom: 30px;
     @media screen and (max-width: 767px) and (min-width: 320px) {

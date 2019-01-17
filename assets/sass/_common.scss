@@ -112,7 +112,7 @@ video {
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: $font-size;
     background-color: $white !important;
     overflow-x: hidden;
@@ -280,3 +280,8 @@ textarea {
         padding: 0px !important; 
     }
 }
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+

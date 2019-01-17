@@ -114,12 +114,14 @@
     content: "\f00c";
     color: #fff;
     background-color: #69deac;
+    font-family: fontawesome;
 }
 
 .has-danger:after {
     content: "\f107";
     color: #fff;
     background-color: #fda08b;
+    font-family: fontawesome;
 }
 
 .has-success:after,

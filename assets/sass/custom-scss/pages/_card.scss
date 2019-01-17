@@ -182,3 +182,159 @@ table.table-dark>tbody>tr>td {
 table.table-dark>tbody>tr>th {
     border-color: #32383e !important;
 }
+
+.card-in-info .card-header strong {
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-in-info .card-footer strong {
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-in-info .location.text-sm-center {
+    font-size: 16px;
+}
+.card-header i.fa {
+    color: #000 !important;
+    font-size: 16px;
+}
+.card-in-info i.fa {
+    color: #878787;
+    font-size: 16px;
+}
+
+.card .user-header .media img {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.card-in-info ul li a {
+    color: #878787;
+    font-size: 16px;
+}
+
+.card-in-info .media-body h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.card-in-info .media-body p {
+    color: #878787;
+}
+
+.blue-ribon {
+    background: url(../images/twitter_corner_blue.png) no-repeat;
+}
+.corner-ribon {
+    text-align: center;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.corner-ribon i {
+    padding: 10px 0 0 35px;
+    color: #fff !important;
+}
+
+.card-in-info .card-body p {
+    color: #878787;
+}
+
+.card-in-info .card-body a {
+    color: #878787;
+}
+.card-in-info .card-body h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.card-in-info .card-body a:hover {
+    color: #000;
+}
+
+.black-ribon {
+    background: url(../images/twitter_corner_black.png) no-repeat;
+}
+.twt-feed.blue-bg {
+    background: #58C9F3;
+}
+
+
+
+@media (max-width: 1368px){
+.twt-feed {
+    max-height: 155px;
+}
+.twt-category {
+    margin-bottom: 0;
+}
+}
+.twt-feed {
+    -webkit-border-radius: 4px 4px 0 0;
+    color: #FFFFFF;
+    padding: 40px 10px 10px;
+    position: relative;
+    min-height: 170px;
+}
+
+.twt-feed .wtt-mark {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 160px;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
+
+
+
+
+
+.twt-category {
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    width: 100%;
+}
+.weather-category {
+    padding: 15px 0;
+    color: #74829C;
+}
+
+.twt-category ul li {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.weather-category ul li {
+    width: 32%;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+.weather-category ul li:last-child {
+    border-right: none;
+}
+
+.twt-footer, .twt-footer a {
+    color: #d2d2d2;
+    font-size: 16px;
+}
+
+.twt-footer {
+    padding: 12px 15px;
+}
+
+footer.blockquote-footer.text-light {
+    font-size: 16px;
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
