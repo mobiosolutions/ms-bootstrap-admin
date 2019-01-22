@@ -1,0 +1,170 @@
+#canvas-holder {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+  #chartjs-tooltip {
+    opacity: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    border-radius: 3px;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  
+  .chartjs-tooltip-key {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+.chart-info .card-header {
+    font-size: 16px;
+}
+
+
+.chart {
+    position: relative; 
+    margin: auto;
+    height: 90px; 
+    width: 90px;
+}
+
+#chart {
+    height: 20em;
+    width: 30em;
+  }
+
+  
+.title, .subtitle, .caption, .label, .legend, figure {
+	font-family: baskerville, serif;
+}
+
+.title, .subtitle, .label, .legend {
+	text-transform: uppercase;
+}
+
+.title {
+	font-size: 18px;
+	width: 400px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+	.title .small {
+		font-size: 12px;
+	}
+
+.subtitle {
+	font-size: 16px;
+	width: 50%;
+	min-width: 400px;
+	margin-top: 16px;
+	text-align: center;
+}
+
+	.subtitle.left {
+		float: left;
+	}
+
+	.subtitle.right {
+		float: right;
+	}
+
+
+.caption {
+	position: relative;
+	top: -170px;
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	font-style: oblique;
+	font-size: 12px;
+}
+
+	.caption p {
+		margin: 0;
+		text-indent: 12px;
+	}
+
+.canvas {
+	font-family: 'Cabin', sans-serif;
+ 	font-size: 14px;
+ 	fill: #474747;
+ 	font-weight: normal;
+}
+
+.wedge {
+	stroke: #aaa;
+	stroke-width: 1px;
+	/*shape-rendering: crispEdges;*/
+}
+
+.label {
+	font-size: 8px;
+}
+
+.disease {
+	fill: rgb(198, 226, 255);
+}
+
+.other {
+	fill: rgb(50,50,50);
+}
+
+.wounds {
+	fill: rgb(252,112,147);
+}
+
+.legend {
+	width: 400px;
+	height: 50px;
+	padding: 0 20px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	top: -150px;
+	text-align: center;
+}
+
+.slider {
+	width: 400px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	left: -30px; /* hacky */
+	top: -100px;
+}
+
+
+canvas#chart-area {
+	@media screen and (max-width: 374px) and (min-width: 320px) {
+		height: 260px !important;
+		width: 260px !important;
+	}
+	@media screen and (max-width: 767px) and (min-width: 375px) {
+		height: 300px !important;
+		width: 300px !important;
+	}
+	@media screen and (max-width: 1280px) and (min-width: 992px) {
+		height: 300px !important;
+		width: 300px !important;
+	}
+}
+
+div#canvas-holder {
+	@media screen and (max-width: 374px) and (min-width: 320px) {
+		width: 280px !important;
+	}
+	@media screen and (max-width: 767px) and (min-width: 375px) {
+		width: 300px !important;
+	}
+}

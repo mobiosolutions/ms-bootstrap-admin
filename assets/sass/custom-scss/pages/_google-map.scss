@@ -1,0 +1,55 @@
+
+#canada-map { 
+  fill: hsl(120, 55%, 20%);
+}
+#canada-map g {
+  transition: .3s;
+}
+#canada-map g:hover { 
+  fill: hsl(120, 55%, 40%);
+  cursor: pointer;
+}
+.active, .active:hover { 
+  fill: hsl(240, 55%, 40%) !important;
+}		
+#provinceInfo { 
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%;
+  background: rgba(0,0,0,0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s; 
+  height: 370px;
+    float: left;
+    overflow: auto;
+}
+@media all and (max-width: 800px) {
+  #provinceInfo { width: 40%; }
+}
+@media all and (max-width: 750px) {
+  #provinceInfo { 
+    width: 100%; 
+    position: static; 
+    background: none;
+  }
+#provinceInfo.show p { 
+  color: #000 !important; 
+  margin-bottom: 2rem; 
+  }
+}
+#provinceInfo.show { opacity: 1; }
+#provinceInfo h1 {
+  background: hsl(240, 55%, 40%);
+  padding: .3rem;
+  padding-left: 1rem;
+  margin-top: -.5rem;
+  font-weight: 400;
+}
+#provinceInfo p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+#provinceInfo img {
+  width: 100%;
+}

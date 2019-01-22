@@ -7605,6 +7605,15 @@ ul.social-link li {
 .user-card-full .social-link li a {
   margin: 0 10px 0 0; }
 
+.card-header h3 {
+  font-size: 16px; }
+
+.model-info .card-header {
+  font-size: 16px; }
+
+.card-header h4 {
+  font-size: 16px; }
+
 .log-in {
   width: 100%;
   margin: 0 auto;
@@ -9368,8 +9377,7 @@ footer.blockquote-footer.text-light {
   padding: 0 .5rem; }
 
 .alert-in-info .card-header {
-  font-size: 16px;
-  font-weight: 600; }
+  font-size: 16px; }
 
 .alert-in-info .alert {
   font-size: 14px; }
@@ -9395,8 +9403,7 @@ footer.blockquote-footer.text-light {
   border-color: #bee5eb; }
 
 .prog-bar-info .card-header {
-  font-size: 16px;
-  font-weight: bold; }
+  font-size: 16px; }
 
 .prog-bar-info .card-body p {
   color: #878787; }
@@ -9523,8 +9530,7 @@ footer.blockquote-footer.text-light {
   border-color: #bd2130; }
 
 .switches-info .card-header {
-  font-size: 16px;
-  font-weight: bold; }
+  font-size: 16px; }
 
 .switch-primary > .switch-input:checked ~ .switch-label {
   background: #007bff !important;
@@ -9789,7 +9795,202 @@ footer.blockquote-footer.text-light {
   font-size: 16px; }
 
 .typo-info .card-header {
+  font-size: 16px; }
+
+#canvas-holder {
+  width: 100%;
+  margin-top: 0px;
+  text-align: center; }
+
+#chartjs-tooltip {
+  opacity: 1;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 3px;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px; }
+
+.chart-info .card-header {
+  font-size: 16px; }
+
+.chart {
+  position: relative;
+  margin: auto;
+  height: 90px;
+  width: 90px; }
+
+#chart {
+  height: 20em;
+  width: 30em; }
+
+.title, .subtitle, .caption, .label, .legend, figure {
+  font-family: baskerville, serif; }
+
+.title, .subtitle, .label, .legend {
+  text-transform: uppercase; }
+
+.title {
+  font-size: 18px;
+  width: 400px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+.title .small {
+  font-size: 12px; }
+
+.subtitle {
   font-size: 16px;
-  font-weight: bold; }
+  width: 50%;
+  min-width: 400px;
+  margin-top: 16px;
+  text-align: center; }
+
+.subtitle.left {
+  float: left; }
+
+.subtitle.right {
+  float: right; }
+
+.caption {
+  position: relative;
+  top: -170px;
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  font-style: oblique;
+  font-size: 12px; }
+
+.caption p {
+  margin: 0;
+  text-indent: 12px; }
+
+.canvas {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  fill: #474747;
+  font-weight: normal; }
+
+.wedge {
+  stroke: #aaa;
+  stroke-width: 1px;
+  /*shape-rendering: crispEdges;*/ }
+
+.label {
+  font-size: 8px; }
+
+.disease {
+  fill: #c6e2ff; }
+
+.other {
+  fill: #323232; }
+
+.wounds {
+  fill: #fc7093; }
+
+.legend {
+  width: 400px;
+  height: 50px;
+  padding: 0 20px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: -150px;
+  text-align: center; }
+
+.slider {
+  width: 400px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  left: -30px;
+  /* hacky */
+  top: -100px; }
+
+@media screen and (max-width: 374px) and (min-width: 320px) {
+  canvas#chart-area {
+    height: 260px !important;
+    width: 260px !important; } }
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  canvas#chart-area {
+    height: 300px !important;
+    width: 300px !important; } }
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+  canvas#chart-area {
+    height: 300px !important;
+    width: 300px !important; } }
+
+@media screen and (max-width: 374px) and (min-width: 320px) {
+  div#canvas-holder {
+    width: 280px !important; } }
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  div#canvas-holder {
+    width: 300px !important; } }
+
+#canada-map {
+  fill: #174f17; }
+
+#canada-map g {
+  transition: .3s; }
+
+#canada-map g:hover {
+  fill: #2e9e2e;
+  cursor: pointer; }
+
+.active, .active:hover {
+  fill: #2e2e9e !important; }
+
+#provinceInfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+  height: 370px;
+  float: left;
+  overflow: auto; }
+
+@media all and (max-width: 800px) {
+  #provinceInfo {
+    width: 40%; } }
+@media all and (max-width: 750px) {
+  #provinceInfo {
+    width: 100%;
+    position: static;
+    background: none; }
+
+  #provinceInfo.show p {
+    color: #000 !important;
+    margin-bottom: 2rem; } }
+#provinceInfo.show {
+  opacity: 1; }
+
+#provinceInfo h1 {
+  background: #2e2e9e;
+  padding: .3rem;
+  padding-left: 1rem;
+  margin-top: -.5rem;
+  font-weight: 400; }
+
+#provinceInfo p {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+#provinceInfo img {
+  width: 100%; }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <?php
+        $title = "Peity Chart";
+        include("./inc/common-head.html");
+   ?>
+</head>
+
+<body class="skin-blue sidebar-mini">
+    <!-- <Start Of Header Section> -->
+    <div class="main-page">
+        <?php
+            $headtitle = "Peity Chart";
+            include("./inc/common-header.html");
+            ?>
+        <!-- Right Section Start -->
+        <div class="right-area content-wrapper">
+            <div class="content-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Pie Chart</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#13dafe&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">1/5</span><svg class="peity" height="50" width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 48.77641290737884 17.274575140626315 L 25 25"
+                                                    fill="#13dafe"></path>
+                                                <path d="M 48.77641290737884 17.274575140626315 A 25 25 0 1 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#6164C1&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">226/360</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 1 1 7.016504991533726 42.36645926147494 L 25 25"
+                                                    fill="#6164C1"></path>
+                                                <path d="M 7.016504991533726 42.36645926147494 A 25 25 0 0 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#F96262&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">0.52/1.561</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 46.667386863494265 37.47094008115171 L 25 25"
+                                                    fill="#F96262"></path>
+                                                <path d="M 46.667386863494265 37.47094008115171 A 25 25 0 1 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#99D683&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">1,4</span><svg class="peity" height="50" width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 48.77641290737884 17.274575140626315 L 25 25"
+                                                    fill="#99D683"></path>
+                                                <path d="M 48.77641290737884 17.274575140626315 A 25 25 0 1 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#FFCA4A&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">226,134</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 1 1 7.016504991533726 42.36645926147494 L 25 25"
+                                                    fill="#FFCA4A"></path>
+                                                <path d="M 7.016504991533726 42.36645926147494 A 25 25 0 0 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="pie" data-peity="{ &quot;fill&quot;: [&quot;#4C5667&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">0.52,1.041</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 46.667386863494265 37.47094008115171 L 25 25"
+                                                    fill="#4C5667"></path>
+                                                <path d="M 46.667386863494265 37.47094008115171 A 25 25 0 1 1 24.999999999999996 0 L 25 25"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Donut Charts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#13DAFE&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">1/5</span><svg class="peity" height="50" width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 48.77641290737884 17.274575140626315 L 36.88820645368942 21.13728757031316 A 12.5 12.5 0 0 0 25 12.5"
+                                                    fill="#13DAFE"></path>
+                                                <path d="M 48.77641290737884 17.274575140626315 A 25 25 0 1 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 1 0 36.88820645368942 21.13728757031316"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#6164C1&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">226/360</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 1 1 7.016504991533726 42.36645926147494 L 16.00825249576686 33.68322963073747 A 12.5 12.5 0 1 0 25 12.5"
+                                                    fill="#6164C1"></path>
+                                                <path d="M 7.016504991533726 42.36645926147494 A 25 25 0 0 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 0 0 16.00825249576686 33.68322963073747"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#F96262&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">0.52/1.561</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 46.667386863494265 37.47094008115171 L 35.833693431747136 31.235470040575855 A 12.5 12.5 0 0 0 25 12.5"
+                                                    fill="#F96262"></path>
+                                                <path d="M 46.667386863494265 37.47094008115171 A 25 25 0 1 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 1 0 35.833693431747136 31.235470040575855"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#99D683&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">1,4</span><svg class="peity" height="50" width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 48.77641290737884 17.274575140626315 L 36.88820645368942 21.13728757031316 A 12.5 12.5 0 0 0 25 12.5"
+                                                    fill="#99D683"></path>
+                                                <path d="M 48.77641290737884 17.274575140626315 A 25 25 0 1 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 1 0 36.88820645368942 21.13728757031316"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#FFCA4A&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">226,134</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 1 1 7.016504991533726 42.36645926147494 L 16.00825249576686 33.68322963073747 A 12.5 12.5 0 1 0 25 12.5"
+                                                    fill="#FFCA4A"></path>
+                                                <path d="M 7.016504991533726 42.36645926147494 A 25 25 0 0 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 0 0 16.00825249576686 33.68322963073747"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <span class="donut" data-peity="{ &quot;fill&quot;: [&quot;#4C5667&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">0.52,1.041</span><svg class="peity" height="50"
+                                                width="50">
+                                                <path d="M 25 0 A 25 25 0 0 1 46.667386863494265 37.47094008115171 L 35.833693431747136 31.235470040575855 A 12.5 12.5 0 0 0 25 12.5"
+                                                    fill="#4C5667"></path>
+                                                <path d="M 46.667386863494265 37.47094008115171 A 25 25 0 1 1 24.999999999999996 0 L 24.999999999999996 12.5 A 12.5 12.5 0 1 0 35.833693431747136 31.235470040575855"
+                                                    fill="#f2f2f2"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Line Charts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span class="peity-line" data-width="100%" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <polygon fill="#c6d9fd" points="0 99.5 0 33.5 15.789473684210526 77.5 31.57894736842105 11.5 47.368421052631575 55.5 63.1578947368421 66.5 78.94736842105263 11.5 94.73684210526315 88.5 110.52631578947368 66.5 126.3157894736842 33.5 142.10526315789474 44.5 157.89473684210526 0.5 173.68421052631578 77.5 189.4736842105263 11.5 205.26315789473682 88.5 221.05263157894737 55.5 236.8421052631579 11.5 252.6315789473684 0.5 268.42105263157896 11.5 284.2105263157895 77.5 300 88.5 300 99.5"></polygon>
+                                                <polyline fill="none" points="0 33.5 15.789473684210526 77.5 31.57894736842105 11.5 47.368421052631575 55.5 63.1578947368421 66.5 78.94736842105263 11.5 94.73684210526315 88.5 110.52631578947368 66.5 126.3157894736842 33.5 142.10526315789474 44.5 157.89473684210526 0.5 173.68421052631578 77.5 189.4736842105263 11.5 205.26315789473682 88.5 221.05263157894737 55.5 236.8421052631579 11.5 252.6315789473684 0.5 268.42105263157896 11.5 284.2105263157895 77.5 300 88.5"
+                                                    stroke="#4d89f9" stroke-width="1" stroke-linecap="square"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="peity-line" data-width="100%" style="display: none;">6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <polygon fill="#c6d9fd" points="0 52.911764705882355 0 17.970588235294116 15.789473684210526 41.26470588235294 31.57894736842105 6.32352941176471 47.368421052631575 29.617647058823522 63.1578947368421 70.38235294117646 78.94736842105263 6.32352941176471 94.73684210526315 47.088235294117645 110.52631578947368 70.38235294117646 126.3157894736842 17.970588235294116 142.10526315789474 82.02941176470588 157.89473684210526 0.5 173.68421052631578 41.26470588235294 189.4736842105263 99.5 205.26315789473682 47.088235294117645 221.05263157894737 29.617647058823522 236.8421052631579 6.32352941176471 252.6315789473684 0.5 268.42105263157896 6.32352941176471 284.2105263157895 41.26470588235294 300 47.088235294117645 300 52.911764705882355"></polygon>
+                                                <polyline fill="none" points="0 17.970588235294116 15.789473684210526 41.26470588235294 31.57894736842105 6.32352941176471 47.368421052631575 29.617647058823522 63.1578947368421 70.38235294117646 78.94736842105263 6.32352941176471 94.73684210526315 47.088235294117645 110.52631578947368 70.38235294117646 126.3157894736842 17.970588235294116 142.10526315789474 82.02941176470588 157.89473684210526 0.5 173.68421052631578 41.26470588235294 189.4736842105263 99.5 205.26315789473682 47.088235294117645 221.05263157894737 29.617647058823522 236.8421052631579 6.32352941176471 252.6315789473684 0.5 268.42105263157896 6.32352941176471 284.2105263157895 41.26470588235294 300 47.088235294117645"
+                                                    stroke="#4d89f9" stroke-width="1" stroke-linecap="square"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="peity-line" data-width="100%" style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <polygon fill="#c6d9fd" points="0 99.5 0 33.5 15.789473684210526 77.5 31.57894736842105 11.5 47.368421052631575 55.5 63.1578947368421 66.5 78.94736842105263 11.5 94.73684210526315 88.5 110.52631578947368 66.5 126.3157894736842 33.5 142.10526315789474 44.5 157.89473684210526 0.5 173.68421052631578 77.5 189.4736842105263 11.5 205.26315789473682 88.5 221.05263157894737 55.5 236.8421052631579 11.5 252.6315789473684 0.5 268.42105263157896 11.5 284.2105263157895 77.5 300 88.5 300 99.5"></polygon>
+                                                <polyline fill="none" points="0 33.5 15.789473684210526 77.5 31.57894736842105 11.5 47.368421052631575 55.5 63.1578947368421 66.5 78.94736842105263 11.5 94.73684210526315 88.5 110.52631578947368 66.5 126.3157894736842 33.5 142.10526315789474 44.5 157.89473684210526 0.5 173.68421052631578 77.5 189.4736842105263 11.5 205.26315789473682 88.5 221.05263157894737 55.5 236.8421052631579 11.5 252.6315789473684 0.5 268.42105263157896 11.5 284.2105263157895 77.5 300 88.5"
+                                                    stroke="#4d89f9" stroke-width="1" stroke-linecap="square"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Bar Charts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span class="bar" data-peity="{ &quot;fill&quot;: [&quot;#13DAFE&quot;, &quot;#6164C1&quot;]}"
+                                                style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <rect fill="#13DAFE" x="1.5" y="33.33333333333334" width="12" height="66.66666666666666"></rect>
+                                                <rect fill="#6164C1" x="16.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#13DAFE" x="31.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#6164C1" x="46.5" y="55.55555555555556" width="12" height="44.44444444444444"></rect>
+                                                <rect fill="#13DAFE" x="61.5" y="66.66666666666667" width="12" height="33.33333333333333"></rect>
+                                                <rect fill="#6164C1" x="76.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#13DAFE" x="91.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                                <rect fill="#6164C1" x="106.5" y="66.66666666666667" width="12" height="33.33333333333333"></rect>
+                                                <rect fill="#13DAFE" x="121.5" y="33.33333333333334" width="12" height="66.66666666666666"></rect>
+                                                <rect fill="#6164C1" x="136.5" y="44.44444444444444" width="12" height="55.55555555555556"></rect>
+                                                <rect fill="#13DAFE" x="151.5" y="0" width="12" height="100"></rect>
+                                                <rect fill="#6164C1" x="166.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#13DAFE" x="181.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#6164C1" x="196.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                                <rect fill="#13DAFE" x="211.5" y="55.55555555555556" width="12" height="44.44444444444444"></rect>
+                                                <rect fill="#6164C1" x="226.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#13DAFE" x="241.5" y="0" width="12" height="100"></rect>
+                                                <rect fill="#6164C1" x="256.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#13DAFE" x="271.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#6164C1" x="286.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="bar" data-peity="{ &quot;fill&quot;: [&quot;#F96262&quot;, &quot;#f2f2f2&quot;]}"
+                                                style="display: none;">6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <rect fill="#F96262" x="1.5" y="17.64705882352942" width="12" height="35.29411764705882"></rect>
+                                                <rect fill="#f2f2f2" x="16.5" y="41.17647058823529" width="12" height="11.76470588235295"></rect>
+                                                <rect fill="#F96262" x="31.5" y="5.882352941176478" width="12" height="47.05882352941176"></rect>
+                                                <rect fill="#f2f2f2" x="46.5" y="29.411764705882348" width="12" height="23.52941176470589"></rect>
+                                                <rect fill="#F96262" x="61.5" y="52.94117647058824" width="12" height="17.647058823529413"></rect>
+                                                <rect fill="#f2f2f2" x="76.5" y="5.882352941176478" width="12" height="47.05882352941176"></rect>
+                                                <rect fill="#F96262" x="91.5" y="47.05882352941176" width="12" height="5.882352941176478"></rect>
+                                                <rect fill="#f2f2f2" x="106.5" y="52.94117647058824" width="12" height="17.647058823529413"></rect>
+                                                <rect fill="#F96262" x="121.5" y="17.64705882352942" width="12" height="35.29411764705882"></rect>
+                                                <rect fill="#f2f2f2" x="136.5" y="52.94117647058824" width="12" height="29.41176470588234"></rect>
+                                                <rect fill="#F96262" x="151.5" y="0" width="12" height="52.94117647058824"></rect>
+                                                <rect fill="#f2f2f2" x="166.5" y="41.17647058823529" width="12" height="11.76470588235295"></rect>
+                                                <rect fill="#F96262" x="181.5" y="52.94117647058824" width="12" height="47.05882352941176"></rect>
+                                                <rect fill="#f2f2f2" x="196.5" y="47.05882352941176" width="12" height="5.882352941176478"></rect>
+                                                <rect fill="#F96262" x="211.5" y="29.411764705882348" width="12" height="23.52941176470589"></rect>
+                                                <rect fill="#f2f2f2" x="226.5" y="5.882352941176478" width="12" height="47.05882352941176"></rect>
+                                                <rect fill="#F96262" x="241.5" y="0" width="12" height="52.94117647058824"></rect>
+                                                <rect fill="#f2f2f2" x="256.5" y="5.882352941176478" width="12" height="47.05882352941176"></rect>
+                                                <rect fill="#F96262" x="271.5" y="41.17647058823529" width="12" height="11.76470588235295"></rect>
+                                                <rect fill="#f2f2f2" x="286.5" y="47.05882352941176" width="12" height="5.882352941176478"></rect>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <span class="bar" data-peity="{ &quot;fill&quot;: [&quot;#99D683&quot;, &quot;#4C5667&quot;]}"
+                                                style="display: none;">6,2,8,4,3,8,1,3,6,5,9,2,8,1,4,8,9,8,2,1</span><svg
+                                                class="peity" height="100" width="300">
+                                                <rect fill="#99D683" x="1.5" y="33.33333333333334" width="12" height="66.66666666666666"></rect>
+                                                <rect fill="#4C5667" x="16.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#99D683" x="31.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#4C5667" x="46.5" y="55.55555555555556" width="12" height="44.44444444444444"></rect>
+                                                <rect fill="#99D683" x="61.5" y="66.66666666666667" width="12" height="33.33333333333333"></rect>
+                                                <rect fill="#4C5667" x="76.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#99D683" x="91.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                                <rect fill="#4C5667" x="106.5" y="66.66666666666667" width="12" height="33.33333333333333"></rect>
+                                                <rect fill="#99D683" x="121.5" y="33.33333333333334" width="12" height="66.66666666666666"></rect>
+                                                <rect fill="#4C5667" x="136.5" y="44.44444444444444" width="12" height="55.55555555555556"></rect>
+                                                <rect fill="#99D683" x="151.5" y="0" width="12" height="100"></rect>
+                                                <rect fill="#4C5667" x="166.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#99D683" x="181.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#4C5667" x="196.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                                <rect fill="#99D683" x="211.5" y="55.55555555555556" width="12" height="44.44444444444444"></rect>
+                                                <rect fill="#4C5667" x="226.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#99D683" x="241.5" y="0" width="12" height="100"></rect>
+                                                <rect fill="#4C5667" x="256.5" y="11.111111111111114" width="12" height="88.88888888888889"></rect>
+                                                <rect fill="#99D683" x="271.5" y="77.77777777777777" width="12" height="22.22222222222223"></rect>
+                                                <rect fill="#4C5667" x="286.5" y="88.88888888888889" width="12" height="11.111111111111114"></rect>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Data attributes</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;#13DAFE&quot;, &quot;#eeeeee&quot;],    &quot;innerRadius&quot;: 10, &quot;radius&quot;: 40 }"
+                                                    style="display: none;">1/7</span><svg class="peity" height="80"
+                                                    width="80">
+                                                    <path d="M 40 0 A 40 40 0 0 1 71.2732592987212 15.060407925650662 L 47.8183148246803 33.76510198141266 A 10 10 0 0 0 40 30"
+                                                        fill="#13DAFE"></path>
+                                                    <path d="M 71.2732592987212 15.060407925650662 A 40 40 0 1 1 39.99999999999999 0 L 40 30 A 10 10 0 1 0 47.8183148246803 33.76510198141266"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;#6164C1&quot;, &quot;#eeeeee&quot;], &quot;innerRadius&quot;: 14, &quot;radius&quot;: 36 }"
+                                                    style="display: none;">2/7</span><svg class="peity" height="72"
+                                                    width="72">
+                                                    <path d="M 36 0 A 36 36 0 0 1 71.09740483854566 44.010753622427316 L 49.64899077054553 39.1152930753884 A 14 14 0 0 0 36 22"
+                                                        fill="#6164C1"></path>
+                                                    <path d="M 71.09740483854566 44.010753622427316 A 36 36 0 1 1 35.99999999999999 0 L 36 22 A 14 14 0 1 0 49.64899077054553 39.1152930753884"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;#F96262&quot;, &quot;#eeeeee&quot;], &quot;innerRadius&quot;: 16, &quot;radius&quot;: 32 }"
+                                                    style="display: none;">3/7</span><svg class="peity" height="64"
+                                                    width="64">
+                                                    <path d="M 32 0 A 32 32 0 0 1 45.88427965176186 60.83100377287741 L 38.94213982588093 46.415501886438705 A 16 16 0 0 0 32 16"
+                                                        fill="#F96262"></path>
+                                                    <path d="M 45.88427965176186 60.83100377287741 A 32 32 0 1 1 31.999999999999993 0 L 31.999999999999996 16 A 16 16 0 1 0 38.94213982588093 46.415501886438705"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;#99D683&quot;, &quot;#eeeeee&quot;],  &quot;innerRadius&quot;: 18, &quot;radius&quot;: 28 }"
+                                                    style="display: none;">4/7</span><svg class="peity" height="56"
+                                                    width="56">
+                                                    <path d="M 28 0 A 28 28 0 1 1 15.851255304708374 53.22712830126774 L 20.190092695883955 44.217439622243546 A 18 18 0 1 0 28 10"
+                                                        fill="#99D683"></path>
+                                                    <path d="M 15.851255304708374 53.22712830126774 A 28 28 0 0 1 27.999999999999996 0 L 27.999999999999996 10 A 18 18 0 0 0 20.190092695883955 44.217439622243546"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;#FFCA4A&quot;, &quot;#eeeeee&quot;],   &quot;innerRadius&quot;: 20, &quot;radius&quot;: 24 }"
+                                                    style="display: none;">5/7</span><svg class="peity" height="48"
+                                                    width="48">
+                                                    <path d="M 24 0 A 24 24 0 1 1 0.6017301076362322 29.340502414951548 L 4.501441756363526 28.45041867912629 A 20 20 0 1 0 24 4"
+                                                        fill="#FFCA4A"></path>
+                                                    <path d="M 0.6017301076362322 29.340502414951548 A 24 24 0 0 1 23.999999999999996 0 L 23.999999999999996 4 A 20 20 0 0 0 4.501441756363526 28.45041867912629"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <p class="data-attributes">
+                                                <span data-peity="{ &quot;fill&quot;: [&quot;indigo&quot;, &quot;#eeeeee&quot;], &quot;innerRadius&quot;: 18, &quot;radius&quot;: 20 }"
+                                                    style="display: none;">6/7</span><svg class="peity" height="40"
+                                                    width="40">
+                                                    <path d="M 20 0 A 20 20 0 1 1 4.363370350639402 7.5302039628253326 L 5.927033315575461 8.7771835665428 A 18 18 0 1 0 20 2"
+                                                        fill="indigo"></path>
+                                                    <path d="M 4.363370350639402 7.5302039628253326 A 20 20 0 0 1 19.999999999999996 0 L 19.999999999999996 2 A 18 18 0 0 0 5.927033315575461 8.7771835665428"
+                                                        fill="#eeeeee"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Setting Colours Dynamically</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <span class="bar-colours-1" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg
+                                                class="peity" height="100" width="100">
+                                                <rect fill="red" x="1" y="44.44444444444444" width="8" height="55.55555555555556"></rect>
+                                                <rect fill="green" x="11.000000000000002" y="66.66666666666667" width="7.999999999999998"
+                                                    height="33.33333333333333"></rect>
+                                                <rect fill="blue" x="21" y="0" width="8" height="100"></rect>
+                                                <rect fill="red" x="31" y="33.33333333333334" width="8" height="66.66666666666666"></rect>
+                                                <rect fill="green" x="40.99999999999999" y="44.44444444444444" width="8.000000000000014"
+                                                    height="55.55555555555556"></rect>
+                                                <rect fill="blue" x="50.99999999999999" y="0" width="8.000000000000007"
+                                                    height="100"></rect>
+                                                <rect fill="red" x="61" y="22.222222222222214" width="8" height="77.77777777777779"></rect>
+                                                <rect fill="green" x="71" y="66.66666666666667" width="8" height="33.33333333333333"></rect>
+                                                <rect fill="blue" x="81" y="44.44444444444444" width="8" height="55.55555555555556"></rect>
+                                                <rect fill="red" x="91" y="77.77777777777777" width="8" height="22.22222222222223"></rect>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span class="bar-colours-2" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg
+                                                class="peity" height="100" width="100">
+                                                <rect fill="green" x="1" y="0" width="8" height="62.5"></rect>
+                                                <rect fill="green" x="11.000000000000002" y="25" width="7.999999999999998"
+                                                    height="37.5"></rect>
+                                                <rect fill="green" x="21" y="37.5" width="8" height="25"></rect>
+                                                <rect fill="red" x="31" y="62.5" width="8" height="12.5"></rect>
+                                                <rect fill="red" x="40.99999999999999" y="62.5" width="8.000000000000014"
+                                                    height="37.5"></rect>
+                                                <rect fill="red" x="50.99999999999999" y="62.5" width="8.000000000000007"
+                                                    height="25"></rect>
+                                                <rect fill="green" x="61" y="37.5" width="8" height="25"></rect>
+                                                <rect fill="green" x="71" y="25" width="8" height="37.5"></rect>
+                                                <rect fill="green" x="81" y="0" width="8" height="62.5"></rect>
+                                                <rect fill="green" x="91" y="37.5" width="8" height="25"></rect>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span class="bar-colours-3" style="display: none;">0,-3,-6,-4,-5,-4,-7,-3,-5,-2</span><svg
+                                                class="peity" height="100" width="100">
+                                                <rect fill="rgb(255, 0, 0)" x="1" y="0" width="8" height="1"></rect>
+                                                <rect fill="rgb(255, 25, 0)" x="11.000000000000002" y="0" width="7.999999999999998"
+                                                    height="42.85714285714286"></rect>
+                                                <rect fill="rgb(255, 51, 0)" x="21" y="0" width="8" height="85.71428571428572"></rect>
+                                                <rect fill="rgb(255, 76, 0)" x="31" y="0" width="8" height="57.142857142857146"></rect>
+                                                <rect fill="rgb(255, 102, 0)" x="40.99999999999999" y="0" width="8.000000000000014"
+                                                    height="71.42857142857143"></rect>
+                                                <rect fill="rgb(255, 127, 0)" x="50.99999999999999" y="0" width="8.000000000000007"
+                                                    height="57.142857142857146"></rect>
+                                                <rect fill="rgb(255, 153, 0)" x="61" y="0" width="8" height="100"></rect>
+                                                <rect fill="rgb(255, 178, 0)" x="71" y="0" width="8" height="42.85714285714286"></rect>
+                                                <rect fill="rgb(255, 204, 0)" x="81" y="0" width="8" height="71.42857142857143"></rect>
+                                                <rect fill="rgb(255, 229, 0)" x="91" y="0" width="8" height="28.57142857142857"></rect>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <span class="pie-colours-2" style="display: none;">5,3,9,6,5</span><svg
+                                                class="peity" height="100" width="100">
+                                                <path d="M 50 0 A 50 50 0 0 1 95.04844339512096 28.305813044122093 L 50 50"
+                                                    fill="rgb(255, 0, 0)"></path>
+                                                <path d="M 95.04844339512096 28.305813044122093 A 50 50 0 0 1 98.74639560909118 61.126046697815724 L 50 50"
+                                                    fill="rgb(255, 51, 0)"></path>
+                                                <path d="M 98.74639560909118 61.126046697815724 A 50 50 0 0 1 18.825509907063342 89.0915741234015 L 50 50"
+                                                    fill="rgb(255, 102, 0)"></path>
+                                                <path d="M 18.825509907063342 89.0915741234015 A 50 50 0 0 1 4.951556604879045 28.3058130441221 L 50 50"
+                                                    fill="rgb(255, 153, 0)"></path>
+                                                <path d="M 4.951556604879045 28.3058130441221 A 50 50 0 0 1 49.99999999999999 0 L 50 50"
+                                                    fill="rgb(255, 204, 0)"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <?php
+            $beforCustomJS = '';
+          include("inc/common-footer.html");
+          ?>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

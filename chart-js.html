@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <?php
+        $title = "Chart JS";
+        include("./inc/common-head.html");
+   ?>
+</head>
+
+<body class="skin-blue sidebar-mini">
+    <!-- <Start Of Header Section> -->
+    <div class="main-page">
+        <?php
+            $headtitle = "Chart JS";
+            include("./inc/common-header.html");
+            ?>
+        <!-- Right Section Start -->
+        <div class="right-area content-wrapper">
+            <div class="content-header">
+                <div class="container">
+                    <div class="row chart-info">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Doughut Chart</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div id="canvas-holder" style="width: 450px;">
+                                        <canvas id="chart-area" width="300" height="300" />
+                                    </div>
+
+                                    <div id="chartjs-tooltip"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Rader chart</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chartContainer">
+                                        <canvas id="radarCanvas"></canvas>
+                                    </div>
+
+                                    <div class="svgContainer"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Polar Chart</strong>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                </div>
+                <?php
+            $beforCustomJS = '';
+          include("inc/common-footer.html");
+          ?>
+            </div>
+        </div>
+
+        <script>
+            Chart(document.getElementById("bubble-chart"), {
+                type: 'bubble',
+                data: {
+                    labels: "Africa",
+                    datasets: [
+                        {
+                            label: ["China"],
+                            backgroundColor: "rgba(255,221,50,0.2)",
+                            borderColor: "rgba(255,221,50,1)",
+                            data: [{
+                                x: 21269017,
+                                y: 5.245,
+                                r: 15
+                            }]
+                        }, {
+                            label: ["Denmark"],
+                            backgroundColor: "rgba(60,186,159,0.2)",
+                            borderColor: "rgba(60,186,159,1)",
+                            data: [{
+                                x: 258702,
+                                y: 7.526,
+                                r: 10
+                            }]
+                        }, {
+                            label: ["Germany"],
+                            backgroundColor: "rgba(0,0,0,0.2)",
+                            borderColor: "#000",
+                            data: [{
+                                x: 3979083,
+                                y: 6.994,
+                                r: 15
+                            }]
+                        }, {
+                            label: ["Japan"],
+                            backgroundColor: "rgba(193,46,12,0.2)",
+                            borderColor: "rgba(193,46,12,1)",
+                            data: [{
+                                x: 4931877,
+                                y: 5.921,
+                                r: 15
+                            }]
+                        }
+                    ]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Predicted world population (millions) in 2050'
+                    }, scales: {
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: "Happiness"
+                            }
+                        }],
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: "GDP (PPP)"
+                            }
+                        }]
+                    }
+                }
+            });</script>
+
+        <script>
+            addEventListener('WebComponentsReady', () => {
+                class MyDataSource extends Polymer.Element {
+                    static get is() { return 'my-data-source'; }
+
+                    static get properties() {
+                        return {
+                            data: {
+                                type: Array,
+                                notify: true,
+                                value: [
+                                    ["Aerospace", 90.0],
+                                    ["Medical", 53.6],
+                                    ["Agriculture", 25.6],
+                                    ["Automotive", 17.0],
+                                    ["Consumers", 12.4],
+                                    ["Subsidies", 1.4]]
+                            }
+                        };
+                    }
+                }
+
+                window.customElements.define(MyDataSource.is, MyDataSource);
+            });
+        </script>
+
+        <script>
+            var graphData = {
+                type: "radar",
+                data: {
+                    labels: [
+                        "Axes 1",
+                        "Axes 2",
+                        "Axes 3",
+                        "Axes 4",
+                        "Axes 5",
+                        "Axes 6",
+                        "Axes 7"
+                    ],
+
+                    datasets: [
+                        {
+                            label: "DataSeries",
+                            fill: true,
+                            lineTension: 0,
+                            backgroundColor: "rgba(75,192,192,0.3)",
+                            borderColor: "rgba(75,192,192,1)",
+                            borderCapStyle: "butt",
+                            borderDash: [],
+                            borderDashOffset: 0.0,
+                            borderJoinStyle: "miter",
+                            pointBorderColor: "rgba(75,192,192,1)",
+                            pointBackgroundColor: "rgba(75,192,192,0.5)",
+                            pointBorderWidth: 2,
+                            pointHoverRadius: 8,
+                            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                            pointHoverBorderWidth: 2,
+                            pointRadius: 4,
+                            pointHitRadius: 10,
+                            data: [30, 5, 30, 20, 30, 25, 50],
+                            spanGaps: false
+                        },
+                        {
+                            label: "Control",
+                            fill: false,
+                            lineTension: 0,
+                            //backgroundColor: "rgba(75,192,192,0.3)",
+                            borderColor: "rgba(255,192,192,1)",
+                            borderCapStyle: "butt",
+                            borderDash: [5, 10],
+                            borderDashOffset: 0.0,
+                            borderJoinStyle: "miter",
+                            pointBorderColor: "rgba(255,192,192,1)",
+                            pointBackgroundColor: "rgba(255,192,192,1)",
+                            pointBorderWidth: 1,
+                            pointHoverRadius: 5,
+                            pointHoverBackgroundColor: "rgba(255,192,192,1)",
+                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                            pointHoverBorderWidth: 2,
+                            pointRadius: 2,
+                            pointHitRadius: 20,
+                            data: [40, 40, 40, 30, 20, 40, 40],
+                            spanGaps: false
+                        }
+                    ]
+                },
+                options: {
+                    scale: {
+                        ticks: {
+                            min: 0, // suggestedMin: 0,
+                            max: 50, //suggestedMax: 50
+                            stepSize: 10
+                        }
+                    },
+                    animation: {
+                        duration: 2000,
+                        easing: "easeOutElastic"
+                    },
+                    responsive: true
+                }
+            }
+
+
+            var context = document.getElementById("radarCanvas").getContext("2d");
+
+            var radarChart = new Chart(context, graphData); // Works fine
+
+            // canvas2svg 'mock' context
+            var svgContext = C2S(500, 500);
+
+            // new chart on 'mock' context fails:
+            var mySvg = new Chart(svgContext, graphData);
+            // Failed to create chart: can't acquire context from the given item
+
+            console.log(svgContext.getSerializedSvg(true));
+
+        </script>
+        <script>
+            window.chartColors = {
+                red: 'rgb(255, 99, 132)',
+                orange: 'rgb(255, 159, 64)',
+                yellow: 'rgb(255, 205, 86)',
+                green: 'rgb(75, 192, 192)',
+                blue: 'rgb(54, 162, 235)',
+                purple: 'rgb(153, 102, 255)',
+                grey: 'rgb(231,233,237)'
+            };
+
+            Chart.defaults.global.tooltips.custom = function (tooltip) {
+                // Tooltip Element
+                var tooltipEl = document.getElementById('chartjs-tooltip');
+
+                // Hide if no tooltip
+                if (tooltip.opacity === 0) {
+                    tooltipEl.style.opacity = 0;
+                    return;
+                }
+
+                // Set Text
+                if (tooltip.body) {
+                    var total = 0;
+
+                    // get the value of the datapoint
+                    var value = this._data.datasets[tooltip.dataPoints[0].datasetIndex].data[tooltip.dataPoints[0].index].toLocaleString();
+
+                    // calculate value of all datapoints
+                    this._data.datasets[tooltip.dataPoints[0].datasetIndex].data.forEach(function (e) {
+                        total += e;
+                    });
+
+                    // calculate percentage and set tooltip value
+                    tooltipEl.innerHTML = '<h1>' + (value / total * 100) + '%</h1>';
+                }
+
+                // calculate position of tooltip
+                var centerX = (this._chartInstance.chartArea.left + this._chartInstance.chartArea.right) / 2;
+                var centerY = ((this._chartInstance.chartArea.top + this._chartInstance.chartArea.bottom) / 2);
+
+                // Display, position, and set styles for font
+                tooltipEl.style.opacity = 1;
+                tooltipEl.style.left = centerX + 'px';
+                tooltipEl.style.top = centerY + 'px';
+                tooltipEl.style.fontFamily = tooltip._fontFamily;
+                tooltipEl.style.fontSize = tooltip.fontSize;
+                tooltipEl.style.fontStyle = tooltip._fontStyle;
+                tooltipEl.style.padding = tooltip.yPadding + 'px ' + tooltip.xPadding + 'px';
+            };
+
+            var config = {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [300, 50, 100, 40, 10],
+                        backgroundColor: [
+                            window.chartColors.red,
+                            window.chartColors.orange,
+                            window.chartColors.yellow,
+                            window.chartColors.green,
+                            window.chartColors.blue,
+                        ],
+                    }],
+                    labels: [
+                        "Red",
+                        "Orange",
+                        "Yellow",
+                        "Green",
+                        "Blue"
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    legend: {
+                        display: true,
+                        labels: {
+                            padding: 20
+                        },
+                    },
+                    tooltips: {
+                        enabled: false,
+                    }
+                }
+            };
+
+            window.onload = function () {
+                var ctx = document.getElementById("chart-area").getContext("2d");
+                window.myPie = new Chart(ctx, config);
+            };</script>
+              <script src="assets/js/Chart.min.js"></script>
+              <script src="assets/js/chartjs-charts.js"></script>
+        <script src="assets/js/Chart.bundle.js"></script>
+        <script src="assets/js/chartjs-init.js"></script>
+        <script src="assets/js/polra-chart.js"></script>
+</body>
+
+</html>
