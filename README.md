@@ -1,9 +1,6 @@
 # MS Bootstrap Admin Panel
 A sass base bootstrap admin panel.
 
-Download: https://github.com/mobiosolutions/ms-bootstrap-admin
-
-
 Technology / Tools: 
 
     - Bootstrap 4
